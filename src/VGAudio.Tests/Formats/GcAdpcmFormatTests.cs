@@ -87,8 +87,8 @@ namespace VGAudio.Tests.Formats
         }
 
         [Theory]
-        [InlineData(Endianness.BigEndian)]
         [InlineData(Endianness.LittleEndian)]
+        [InlineData(Endianness.BigEndian)]
         public void BuildSeekTableOneChannel(Endianness endianness)
         {
             short[] expected = { 0, 0, 50, 49, 100, 99 };
@@ -98,8 +98,8 @@ namespace VGAudio.Tests.Formats
         }
 
         [Theory]
-        [InlineData(Endianness.BigEndian)]
         [InlineData(Endianness.LittleEndian)]
+        [InlineData(Endianness.BigEndian)]
         public void BuildSeekTableTwoChannels(Endianness endianness)
         {
             short[] expected = { 0, 0, 0, 0, 50, 49, 100, 99, 100, 99, 150, 149 };
@@ -109,8 +109,8 @@ namespace VGAudio.Tests.Formats
         }
 
         [Theory]
-        [InlineData(Endianness.BigEndian)]
         [InlineData(Endianness.LittleEndian)]
+        [InlineData(Endianness.BigEndian)]
         public void BuildSeekTableFourChannels(Endianness endianness)
         {
             short[] expected =
@@ -125,8 +125,8 @@ namespace VGAudio.Tests.Formats
         }
 
         [Theory]
-        [InlineData(Endianness.BigEndian)]
         [InlineData(Endianness.LittleEndian)]
+        [InlineData(Endianness.BigEndian)]
         public void BuildSeekTableFourChannelsTruncated(Endianness endianness)
         {
             short[] expected =
